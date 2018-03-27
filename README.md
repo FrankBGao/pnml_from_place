@@ -4,7 +4,8 @@ The original idea is from prof Wil van der Aalst's paper. Using place's input an
 And, ProM is no need for position information, so this project has no function about position <br></br>
 Such a place array likes <br></br>
 ```
-places = [{'input': ['a'], 'output': ['b']}, {'input': ['a','b'], 'output': ['c']}, {'input': ['c'], 'output': ['d']}, {'input': ['b'], 'output': ['d']}]
+places = [{'input': ['a'], 'output': ['b']}, {'input': ['a','b'], 'output': ['c']},
+{'input': ['c'], 'output': ['d']}, {'input': ['b'], 'output': ['d']}]
 ```
 It will generate a string for pnml. And put it into ProM will looks like below<br></br>
 <img align="right" src=https://raw.githubusercontent.com/FrankBGao/pnml_from_place/master/example.JPG >
