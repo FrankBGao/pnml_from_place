@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<pnml>
+	<net id="b9656e89-e9a3-49ed-895b-c64ffbb41a93" type="http://www.yasper.org/specs/epnml-1.1">
+		<name>
+			<text>example</text>
+		</name>
+		<place id="edda3a18-bafe-43c4-b3e4-4237f0794b32">
+			<name>
+				<text>([a],[b])</text>
+			</name>
+		</place>
+		<place id="a8531f74-c84f-4bb4-b241-05f614bad53f">
+			<name>
+				<text>([a,b],[c])</text>
+			</name>
+		</place>
+		<place id="ea6b323f-d284-4347-9f49-f14aea60c988">
+			<name>
+				<text>([c],[d])</text>
+			</name>
+		</place>
+		<place id="0ee990f7-cadc-4442-a5c1-fc11d864df63">
+			<name>
+				<text>([b],[d])</text>
+			</name>
+		</place>
+		<transition id="78bfd542-e38a-40bf-8213-580f972fc61f">
+			<name>
+				<text>b</text>
+			</name>
+		</transition>
+		<transition id="5c1f819b-afaa-42e1-ab58-8db21c229cdd">
+			<name>
+				<text>a</text>
+			</name>
+		</transition>
+		<transition id="d3aaa8d1-d8ca-4669-8779-254ee4d988e0">
+			<name>
+				<text>d</text>
+			</name>
+		</transition>
+		<transition id="ee901f32-33a0-4ab3-9ef1-27559fc3ddb0">
+			<name>
+				<text>c</text>
+			</name>
+		</transition>
+		<arc id="01a44381-ed59-4a8e-8560-7a59004abca3" source="5c1f819b-afaa-42e1-ab58-8db21c229cdd" target="edda3a18-bafe-43c4-b3e4-4237f0794b32">
+			<name>
+				<text>1</text>
+			</name>
+			<arctype>
+				<text>normal</text>
+			</arctype>
+		</arc>
+		<arc id="24707a34-d500-442a-9b6f-2b3dfa81c828" source="edda3a18-bafe-43c4-b3e4-4237f0794b32" target="78bfd542-e38a-40bf-8213-580f972fc61f">
+			<name>
+				<text>1</text>
+			</name>
+			<arctype>
+				<text>normal</text>
+			</arctype>
+		</arc>
+		<arc id="8375b4a3-45ac-4fde-ac7d-96c49200a71e" source="5c1f819b-afaa-42e1-ab58-8db21c229cdd" target="a8531f74-c84f-4bb4-b241-05f614bad53f">
+			<name>
+				<text>1</text>
+			</name>
+			<arctype>
+				<text>normal</text>
+			</arctype>
+		</arc>
+		<arc id="4bc7331e-6c9e-448a-bd0a-5eacbcd438b7" source="78bfd542-e38a-40bf-8213-580f972fc61f" target="a8531f74-c84f-4bb4-b241-05f614bad53f">
+			<name>
+				<text>1</text>
+			</name>
+			<arctype>
+				<text>normal</text>
+			</arctype>
+		</arc>
+		<arc id="5ab88ba9-b0c2-4efb-8b23-c1245ff58d1a" source="a8531f74-c84f-4bb4-b241-05f614bad53f" target="ee901f32-33a0-4ab3-9ef1-27559fc3ddb0">
+			<name>
+				<text>1</text>
+			</name>
+			<arctype>
+				<text>normal</text>
+			</arctype>
+		</arc>
+		<arc id="39ca8038-ba54-4421-a402-6c0ec60eecc2" source="ee901f32-33a0-4ab3-9ef1-27559fc3ddb0" target="ea6b323f-d284-4347-9f49-f14aea60c988">
+			<name>
+				<text>1</text>
+			</name>
+			<arctype>
+				<text>normal</text>
+			</arctype>
+		</arc>
+		<arc id="61f08fd8-11b8-4c13-b82c-03d47dbd9b31" source="ea6b323f-d284-4347-9f49-f14aea60c988" target="d3aaa8d1-d8ca-4669-8779-254ee4d988e0">
+			<name>
+				<text>1</text>
+			</name>
+			<arctype>
+				<text>normal</text>
+			</arctype>
+		</arc>
+		<arc id="73761899-f878-4987-8f4b-58b0f9f1fe1a" source="78bfd542-e38a-40bf-8213-580f972fc61f" target="0ee990f7-cadc-4442-a5c1-fc11d864df63">
+			<name>
+				<text>1</text>
+			</name>
+			<arctype>
+				<text>normal</text>
+			</arctype>
+		</arc>
+		<arc id="9d688e79-8972-42b3-964c-3b0d2bddde69" source="0ee990f7-cadc-4442-a5c1-fc11d864df63" target="d3aaa8d1-d8ca-4669-8779-254ee4d988e0">
+			<name>
+				<text>1</text>
+			</name>
+			<arctype>
+				<text>normal</text>
+			</arctype>
+		</arc>
+	</net>
+</pnml>
